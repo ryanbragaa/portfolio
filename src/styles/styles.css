@@ -1,0 +1,32 @@
+@import url('navegacao.css');
+@import url('cabecalho.css');
+@import url('sobre.css');
+@import url('projetos.css');
+@import url('contatos.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+    --primaria: #ffffff;
+    --secundaria: #00dffc;
+    --escuro: #070707;
+    --maisEscuro: #000000;
+    --claro: #e2e8f0;
+    --vidro: rgba(0, 0, 0, 0.1);
+}
+
+body {
+    background-color: var(--escuro);
+    color: var(--claro);
+    overflow-x: hidden;
+}

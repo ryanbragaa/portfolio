@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Ryan Braga | Portfólio</title>
+</head>
+<body>
+    <nav class="navegacao">
+        <ul class="menu">
+            <li>
+                <a href="#inicio" class="menu-link">Início</a>
+            </li>
+            <li>
+                <a href="#sobre" class="menu-link">Sobre</a>
+            </li>
+            <li>
+                <a href="#projetos" class="menu-link">Projetos</a>
+            </li>
+            <li>
+                <a href="#contatos" class="menu-link">Contato</a>
+            </li>
+        </ul>
+
+        <!-- <button id="mobile_btn">
+            <ion-icon name="list-outline"></ion-icon>
+        </button> -->
+    </nav>
+
+    <!-- <div id="mobile_menu">
+        <ul id="mobile_nav_list" class="menu">
+            <li>
+                <a href="#inicio" class="menu-link">Início</a>
+            </li>
+            <li>
+                <a href="#sobre" class="menu-link">Sobre</a>
+            </li>
+            <li>
+                <a href="#projetos" class="menu-link">Projetos</a>
+            </li>
+            <li>
+                <a href="#contatos" class="menu-link">Contato</a>
+            </li>
+        </ul>
+    </div> -->
+
+    <main id="inicio" class="cabecalho">
+        <div id="particles-js">
+            <div class="foto-container">
+            <img src="./src/img/foto-desenho.png" alt="Foto de Ryan Braga" class="foto-perfil">
+        </div>
+        <div class="nome-subtitulo">
+            <h1>Ryan Braga</h1>
+            <p class="cabecalho-sub-titulo">Desenvolvedor Full Stack</p>
+        </div>
+        
+    </main>
+
+    <section  id="sobre" class="sobre">
+        <h2 class="sobre-titulo">Sobre Mim</h2>
+        <div class="sobre-caixa">
+            <p class="sobre-paragrafo">
+                Sou um desenvolvedor full-stack apaixonado por tecnologia e soluções criativas. Iniciei minha jornada com marketing digital como autônomo, o que me proporcionou uma boa visão de mercado e estratégia. Com o tempo, me encontrei na programação e desde então desenvolvi diversos projetos, incluindo sites, bots personalizados e sistemas de vendas.
+            </p>
+        </div>
+
+        <div class="container" style="
+        --width: 100px;
+        --height: 50px;
+        --quantity: 5;
+        ">
+            <div class="carrossel">
+            <div class="item" style="--delay: 1s"><img src="./src/img/stacks/item1-1.png" alt=""></div>
+            <div class="item" style="--delay: 2s"><img src="./src/img/stacks/item1-2.png" alt=""></div>
+            <div class="item" style="--delay: 3s"><img src="./src/img/stacks/item1-3.png" alt=""></div>
+            <div class="item" style="--delay: 4s"><img src="./src/img/stacks/item1-4.png" alt=""></div>
+            <div class="item" style="--delay: 5s"><img src="./src/img/stacks/item1-5.png" alt=""></div>
+        </div>
+
+    </section>
+
+    <section id="projetos" class="projetos">
+        <h2 class="projetos-titulo">Meus Projetos</h2>
+        <div class="projetos-caixa">
+            <div class="projetos-card">
+                <img src="./src/img/weather-app.jpg" alt="Projeto 1" class="projetos-imagem">
+                <div class="caixa-textos-projetos">
+                    <h3 class="info-projetos">Site de previsão do tempo</h3>
+                    <p class="paragrafo-projetos">Aplicação web de previsão do tempo desenvolvida com consumo de API externa. Realizei a integração e o tratamento dos dados recebidos, exibindo informações atualizadas de forma clara e organizada para o usuário.</p>
+                </div>
+            </div>
+            <div class="projetos-card">
+                <img src="./src/img/to-do-list.jpg" alt="Projeto 2" class="projetos-imagem">
+                <div class="caixa-textos-projetos">
+                    <h3 class="info-projetos">To-Do List</h3>
+                    <p class="paragrafo-projetos">Aplicação web de lista de tarefas com implementação completa do processo CRUD. Permite criar, visualizar, atualizar e excluir tarefas de forma prática e intuitiva, garantindo organização no dia a dia.</p>
+                </div>
+            </div>
+            <div class="projetos-card">
+                <img src="./src/img/nitros-store.jpg" alt="Projeto 4" class="projetos-imagem">
+                <div class="caixa-textos-projetos">
+                    <h3 class="info-projetos">Bot De Vendas</h3>
+                    <p class="paragrafo-projetos">Bot de vendas para Discord desenvolvido para automatizar processos comerciais. Ele gerencia tickets por produto, envia QR Codes para pagamento, registra logs detalhados com transcripts, cria anúncios de produtos e auxilia na administração do servidor</p>
+                </div>
+            </div>
+            <div class="projetos-card">
+                <img src="./src/img/starbucks.jpg" alt="Projeto 3" class="projetos-imagem">
+                <div class="caixa-textos-projetos">
+                    <h3 class="info-projetos">Site Starbucks</h3>
+                    <p class="paragrafo-projetos">Landing page inspirada no site do Starbucks, desenvolvida para praticar conceitos de layout, estilização e usabilidade. O foco foi recriar a identidade visual da marca com design moderno.</p>
+                </div>
+            </div>
+            <div class="projetos-card">
+                <img src="./src/img/bg-flix.jpg" alt="Projeto 4" class="projetos-imagem">
+                <div class="caixa-textos-projetos">
+                    <h3 class="info-projetos">BG Flix</h3>
+                    <p class="paragrafo-projetos">Aplicação desenvolvida em React.js com sistema de filtro por categoria de vídeos. Permite ao usuário navegar e visualizar conteúdos de forma organizada e dinâmica.</p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="contatos" class="contatos">
+        <h2 class="contatos-titulo">Entre em Contato</h2>
+
+        <form method="post" class="formulario-contato" id="contact_form">
+            <div class="grupo-form">
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" class="campo-form" required>
+            </div>
+
+            <div class="grupo-form">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" class="campo-form" required>
+            </div>
+
+            <div class="grupo-form">
+                <label for="subject">Assunto</label>
+                <input type="text" id="subject" name="subject" class="campo-form" required>
+            </div>
+
+            <div class="grupo-form">
+                <label for="message">Mensagem</label>
+                <textarea id="message" name="message" class="campo-form" required></textarea>
+            </div>
+
+            <button type="submit" class="botao-form" id="submit_button">Enviar Email</button>
+        </form>
+
+        <div id="social-links">
+            <div class="social-icon">
+                <a href="https://github.com/ryanbragaa" target="_blanck">
+                    <ion-icon name="logo-github"></ion-icon>
+                </a>
+            </div>
+
+            <div class="social-icon">
+                <a href="https://www.instagram.com/ryanbraga.dev" target="_blanck">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+            </div>
+            
+            <div class="social-icon">
+                <a href="https://linkedin.com/in/ryanbragaa" target="_blanck">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="src/javascript/script.js" defer></script>
+
+</body>
+
+</html>

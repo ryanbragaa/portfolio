@@ -35,6 +35,7 @@
     transparent,
     #000 10% 90%,
     transparent); */
+    overflow-x: hidden;
 }
 
 .carrossel {
@@ -68,8 +69,8 @@
         --height: 50px;
         --quantity: 5;
     /* animation-play-state: paused; */
-    animation: autoRun 8s linear infinite;
-    animation-delay: calc( 8 / var(--quantity) * var(--delay));
+    animation: autoRun 10s linear infinite;
+    animation-delay: calc( 10 / var(--quantity) * var(--delay));
   }
 }
 

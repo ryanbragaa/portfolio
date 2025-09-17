@@ -69,8 +69,8 @@
         --height: 50px;
         --quantity: 5;
     /* animation-play-state: paused; */
-    animation: autoRun 10s linear infinite;
-    animation-delay: calc( 10 / var(--quantity) * var(--delay));
+    animation: autoRun 20s linear infinite;
+    animation-delay: calc( 20 / var(--quantity) * var(--delay));
   }
 }
 

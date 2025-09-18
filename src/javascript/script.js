@@ -9,7 +9,7 @@ particlesJS("particles-js", {
     "move": { "enable": true, "speed": 6 }
   },
   "interactivity": {
-    "events": { "onhover": { "enable": true, "mode": "repulse" }, "onclick": { "enable": true, "mode": "push" } },
+    "events": { "onhover": { "enable": true, "mode": "repulse" }, "onclick": { "enable": false, "mode": "push" } },
     "modes": { "repulse": { "distance": 200 } }
   },
   "retina_detect": true

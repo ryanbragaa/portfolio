@@ -1,0 +1,45 @@
+.rodape-container {
+    background-color: var(--escuro);
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+.voltar-topo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--vidro);
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.top-icon {
+    font-size: 2rem;
+    animation: moverCimaBaixo alternate 1s infinite;
+}
+
+
+.voltar-topo-container {
+    animation: fade-in-on-scroll 1s forwards;
+    animation-timeline: scroll(root block);
+    animation-range: entry 0% cover 50%;
+}
+
+.rodape.visible {
+    opacity: 1;
+}
+
+.rodape-container {
+    margin-top: 2rem;
+}

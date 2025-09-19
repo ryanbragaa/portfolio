@@ -1,10 +1,11 @@
 .navegacao {
     position: fixed;
     top: 0;
-    background: rgba(0, 0, 0, 0.2);
+    background: var(--vidro);
     width: 100%;
     z-index: 100;
     padding: 1.5rem;
+    backdrop-filter: blur(10px);
 }
 
 .menu {

@@ -83,3 +83,17 @@ h1 {
     font-size: 1.5rem;
     color: var(--claro);
 }
+
+.seta-rolagem {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: moverCimaBaixo 2s infinite;
+}
+
+.arrow-icon {
+    font-size: 3rem;
+    color: var(--claro);
+    z-index: 1;
+}

@@ -1,9 +1,9 @@
-@keyframes autoRun {
+@keyframes slide {
     from {
-        left: 100%;
+        transform:translateX(0);
     }
     to {
-        left: -150px;
+        transform:translateX(-100%);
     }
 }
 

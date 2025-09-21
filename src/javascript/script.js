@@ -63,3 +63,6 @@ document.getElementById("contact_form").addEventListener("submit", function (eve
          submitButton.disabled = false;
       })
 });
+
+let copy = document.querySelector(".logos-slide").cloneNode(true);
+document.querySelector(".logos").appendChild(copy);

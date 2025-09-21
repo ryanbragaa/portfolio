@@ -132,12 +132,10 @@ h1 {
 }
 
 .flip-card-front {
-    background-color: #bbb;
-    color: black;
+    background-color: var(--claro);
 }
 
 .flip-card-back {
-    background-color: dodgerblue;
-    color: white;
+    background-color: var(--claro);
     transform: rotateY(180deg);
 }

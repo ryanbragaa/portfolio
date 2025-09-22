@@ -96,3 +96,12 @@ label {
 .social-link ion-icon {
     font-size: 1.4rem;
 }
+
+
+
+@media screen and (max-width: 799px) {
+    .social-link {
+        gap: 2px;
+    padding: 5px 10px;
+    }
+}

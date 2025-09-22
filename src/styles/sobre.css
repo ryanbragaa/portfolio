@@ -27,6 +27,7 @@
 .sobre-paragrafo {
     text-align: center;
     font-size: 1.5rem;
+    overflow: hidden;
 }
 
 .logos {
@@ -35,6 +36,7 @@
     white-space: nowrap;
     position: absolute; 
     bottom: 10px;
+    width: 100%;
 }
 
 .logos-slide {
@@ -43,28 +45,28 @@
 }
 
 .logos-slide img {
-    height: 40px;
+    height: 50px;
     margin: 0 50px;
 }
 
 
-/* .logos::before,
+.logos::before,
 .logos::after {
     position: absolute;
     width: 100px;
     height: 100%;
     content: "";
     z-index: 2;
-}
+} 
 
 .logos:before {
     left: 0;
-    background: linear-gradient(to left, rgba(255, 255, 255, 0), red);
+    background: linear-gradient(to left, var(--vidro), var(--escuro));
 }
 
 .logos:after {
     right: 0;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0), red);
+    background: linear-gradient(to right, var(--vidro), var(--escuro));
 } */
 
 
@@ -76,16 +78,13 @@
 
 @media screen and (max-width: 799px) {
 
-    .logos {
-        margin-top: 20px;
+    .sobre-paragrafo {
+        font-size: 1rem;
     }
 
-  .logos-slide {
-        --width: 60px;
-        --height: 50px;
-        --quantity: 5;
-    animation: slide 20s linear infinite;
-  }
+    .logos img {
+        height: 30px;
+    }
 }
 
 

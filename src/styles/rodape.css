@@ -26,7 +26,7 @@
 
 .top-icon {
     font-size: 2rem;
-    animation: moverCimaBaixo alternate 1s infinite;
+    animation: moverCimaBaixo linear 1s infinite;
 }
 
 

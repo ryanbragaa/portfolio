@@ -1,21 +1,44 @@
-const primaria = getComputedStyle(document.documentElement).getPropertyValue('--primaria').trim();
+const claro = getComputedStyle(document.documentElement).getPropertyValue('--primaria').trim();
+const escuro = getComputedStyle(document.documentElement).getPropertyValue('--escuro-900').trim();
+const darkBody = getComputedStyle(document.documentElement).getPropertyValue('.dark').trim();
+let toggleDark = 0;
 
-particlesJS("particles-js", {
-  "particles": {
-    "number": { "value": 80, "density": { "enable": true, "value_area": 800 } },
-    "color": { "value": primaria },
-    "shape": { "type": "circle" },
-    "opacity": { "value": 0.5 },
-    "size": { "value": 3, "random": true },
-    "line_linked": { "enable": true, "distance": 150, "color": primaria, "opacity": 0.4, "width": 1 },
-    "move": { "enable": true, "speed": 6 }
-  },
-  "interactivity": {
-    "events": { "onhover": { "enable": true, "mode": "repulse" }, "onclick": { "enable": false, "mode": "push" } },
-    "modes": { "repulse": { "distance": 200 } }
-  },
-  "retina_detect": true
-});
+function initParticles() {
+  const tema = localStorage.getItem("theme");
+
+  if (window.pJSDom && window.pJSDom.length > 0) {
+    window.pJSDom[0].pJS.fn.vendors.destroypJS();
+    window.pJSDom = [];
+  }
+
+  particlesJS("particles-js", {
+    particles: {
+      number: { value: 80, density: { enable: true, value_area: 800 } },
+      color: { value: tema === "dark" ? escuro : claro },
+      shape: { type: "circle" },
+      opacity: { value: 0.5 },
+      size: { value: 3, random: true },
+      line_linked: {
+        enable: true,
+        distance: 150,
+        color: tema === "dark" ? escuro : claro,
+        opacity: 0.4,
+        width: 1
+      },
+      move: { enable: true, speed: 6 }
+    },
+    interactivity: {
+      events: {
+        onhover: { enable: true, mode: "repulse" },
+        onclick: { enable: false, mode: "push" }
+      },
+      modes: { repulse: { distance: 200 } }
+    },
+    retina_detect: true
+  });
+}
+
+initParticles();
 
 
 emailjs.init("fFwckNS5atX7a7CtL");
@@ -66,3 +89,24 @@ document.getElementById("contact_form").addEventListener("submit", function (eve
 
 let copy = document.querySelector(".logos-slide").cloneNode(true);
 document.querySelector(".logos").appendChild(copy);
+
+const btn = document.getElementById("toggle-theme");
+btn.addEventListener("click", () => {
+   document.body.classList.toggle("dark");
+
+   if (document.body.classList.contains("dark")) {
+      localStorage.setItem("theme", "dark");
+      btn.textContent = "☀️";
+   } else {
+      localStorage.setItem("theme", "light");
+      btn.textContent = "🌙";
+   }
+
+   initParticles();
+});
+
+if (localStorage.getItem("theme") === "dark") {
+   document.body.classList.add("dark");
+   btn.textContent = "☀️";
+} 
+

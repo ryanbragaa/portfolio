@@ -24,6 +24,8 @@ html {
     --maisEscuro: #000000;
     --claro: #e2e8f0;
     --vidro: rgba(0, 0, 0, 0.1);
+    --vidroDois: rgba(255, 255, 255, 0.05);
+    --vidroTres: rgba(239, 239, 239, 0.3);
 }
 
 body {

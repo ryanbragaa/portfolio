@@ -17,7 +17,7 @@
 .formulario-contato {
     max-width: 600px;
     margin: 0 auto;
-    background: rgba(255, 255, 255, 0.05);
+    background: var(--vidroDois);
     backdrop-filter: blur(5px);
     padding: 1rem;
     border: 1px solid var(--vidro);
@@ -32,7 +32,7 @@ label {
 .campo-form {
     width: 100%;
     padding: 10px;
-    background: rgba(255, 255, 255, 0.05);
+    background: var(--vidroDois);
     border-radius: 8px;
     color: var(--claro);
     border: 1px solid var(--vidro);
@@ -40,8 +40,8 @@ label {
 }
 
 .campo-form:focus {
-    border-color: rgba(239, 239, 239, 0.3);
-    box-shadow: 0 0 10px rgba(239, 239, 239, 0.3);
+    border-color: var(--vidroTres);
+    box-shadow: 0 0 10px var(--vidroTres);
 }
 
 .grupo-form {
@@ -63,7 +63,7 @@ label {
 .botao-form:hover {
     transform: translateY(-2px);
     background: var(--claro);
-    color: #000;
+    color: var(--maisEscuro);
     transition: all 0.3s ease;
 }
 
@@ -90,7 +90,7 @@ label {
 
 .social-link:hover {
     background: var(--claro);
-    color: #000;
+    color: var(--maisEscuro);
 }
 
 .social-link ion-icon {
@@ -102,6 +102,6 @@ label {
 @media screen and (max-width: 799px) {
     .social-link {
         gap: 2px;
-    padding: 5px 10px;
+        padding: 5px 10px;
     }
 }

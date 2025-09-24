@@ -11,7 +11,7 @@
 }
 
 .projetos-card {
-    background: rgba(255, 255, 255, 0.05);
+    background: var(--vidroDois);
     display: flex;
     flex-direction: column;   
     border-radius: 16px;
@@ -29,7 +29,7 @@
 }
 
 .projetos-card:hover {
-    box-shadow: 0 10px 20px rgba(239, 239, 239, 0.3);
+    box-shadow: 0 10px 20px var(--vidroTres);
     transform: translateY(-10px) scale(1.03);
 }
 
@@ -47,7 +47,7 @@
 }
 
 .paragrafo-projetos {
-    color: rgba(226, 232, 240, 0.8);
+    color: var(--claro);
     line-height: 1.25rem;
 }
 
@@ -95,5 +95,5 @@
 
 .btn-projeto:hover {
     background: var(--claro);
-    color: #000;
+    color: var(--maisEscuro);
 }

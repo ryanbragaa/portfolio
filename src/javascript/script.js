@@ -91,15 +91,17 @@ let copy = document.querySelector(".logos-slide").cloneNode(true);
 document.querySelector(".logos").appendChild(copy);
 
 const btn = document.getElementById("toggle-theme");
+const icon = document.getElementById("theme-icon");
+
 btn.addEventListener("click", () => {
    document.body.classList.toggle("dark");
 
    if (document.body.classList.contains("dark")) {
       localStorage.setItem("theme", "dark");
-      btn.textContent = "☀️";
+      icon.setAttribute("name", "sunny-outline");
    } else {
       localStorage.setItem("theme", "light");
-      btn.textContent = "🌙";
+      icon.setAttribute("name", "moon-outline");
    }
 
    initParticles();
@@ -107,6 +109,8 @@ btn.addEventListener("click", () => {
 
 if (localStorage.getItem("theme") === "dark") {
    document.body.classList.add("dark");
-   btn.textContent = "☀️";
-} 
+   icon.setAttribute("name", "sunny-outline");
+} else {
+   icon.setAttribute("name", "moon-outline");
+}
 

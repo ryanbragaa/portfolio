@@ -14,6 +14,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-bottom: 80px;
+    
     /* align-items: center; */
 }
 
@@ -129,4 +131,9 @@ h1 {
 .flip-card-back {
     background-color: var(--textColor);
     transform: rotateY(180deg);
+}
+
+
+.tanto-faz {
+
 }

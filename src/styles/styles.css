@@ -18,20 +18,43 @@ html {
 }
 
 :root {
-    --primaria: #ffffff;
-    --secundaria: #00dffc;
-    --escuro: #070707;
-    --maisEscuro: #000000;
-    --claro: #e2e8f0;
+    --primaria: #F5F5F5;
+    --blue: #00dffc;
+    --escuro-700: #070707;
+    --escuro-900: #000000;
+    --textColor: #e2e8f0;
     --vidro: rgba(0, 0, 0, 0.1);
     --vidroDois: rgba(255, 255, 255, 0.05);
     --vidroTres: rgba(239, 239, 239, 0.3);
+    --boxShadow: rgba(255, 255, 255, 0.2);
 }
 
 body {
-    background-color: var(--escuro);
+    background-color: var(--escuro-700);
     color: var(--claro);
     overflow-x: hidden;
+    transition: all 0.3s ease;
+}
+
+body.dark {
+    --primaria: #000000;
+    --blue: #00dffc;
+    --escuro-700: #ffffff;
+    --escuro-900: #ffffff;
+    --textColor: #000000;
+    --vidro: rgba(255, 255, 255, 0.1);
+    --vidroDois: rgba(0, 0, 0, 0.143);
+    --vidroTres: rgba(239, 239, 239, 0.3);
+    --boxShadow: rgba(77, 77, 77, 0.566);
+}
+
+#toggle-theme {
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: none;
+    background: var(--claro);
+    color: var(var(--escuro-700-900));
 }
 
 main {

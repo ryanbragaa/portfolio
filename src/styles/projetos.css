@@ -1,5 +1,6 @@
 .projetos {
     padding: 6rem 2rem;
+    color: var(--textColor);
 }
 
 .projetos-caixa {
@@ -29,7 +30,7 @@
 }
 
 .projetos-card:hover {
-    box-shadow: 0 10px 20px var(--vidroTres);
+    box-shadow: 0 10px 20px var(--boxShadow);
     transform: translateY(-10px) scale(1.03);
 }
 
@@ -47,7 +48,7 @@
 }
 
 .paragrafo-projetos {
-    color: var(--claro);
+    color: var(--textColor);
     line-height: 1.25rem;
 }
 
@@ -64,7 +65,7 @@
 }
 
 .link-projeto a {
-    color: var(--claro);
+    color: var(--textColor);
     font-weight: bold;
     text-decoration: none;
     font-size: 1.2rem;
@@ -81,7 +82,7 @@
     gap: 8px;
     padding: 10px 18px;
     background: var(--vidro);
-    color: var(--claro);
+    color: var(--textColor);
     font-weight: bold;
     font-size: 1rem;
     border-radius: 8px;
@@ -94,6 +95,6 @@
 }
 
 .btn-projeto:hover {
-    background: var(--claro);
-    color: var(--maisEscuro);
+    background: var(--textColor);
+    color: var(--escuro-900);
 }

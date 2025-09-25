@@ -2,7 +2,7 @@
     background-color: var(--escuro-700);
     color: var(--primaria);
     text-align: center;
-    padding: 20px 0;
+    padding-top: 1.5rem ;
     font-size: 14px;
 }
 
@@ -41,5 +41,5 @@
 }
 
 .rodape-container {
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
 }

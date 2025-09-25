@@ -2,7 +2,7 @@
 
 .contatos {
     width: 100%;
-    padding: 5rem 2rem;
+    /* padding: 5rem 2rem; */
     position: relative;
     overflow: hidden;
     
@@ -27,7 +27,7 @@
 
 label {
     display: flex;
-    margin-bottom: 5px;
+    /* margin-bottom: 5px; */
     color: var(--textColor);
 }
 
@@ -47,7 +47,7 @@ label {
 }
 
 .grupo-form {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .botao-form {
@@ -71,9 +71,9 @@ label {
 
 #social-links {
     display: flex;
-    gap: 20px;
+    gap: 1.5rem;
     justify-content: center;
-    margin-top: 40px;
+    margin-top: 2rem;
 }
 
 .social-link {

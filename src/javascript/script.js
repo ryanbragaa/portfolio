@@ -114,3 +114,5 @@ if (localStorage.getItem("theme") === "dark") {
    icon.setAttribute("name", "moon-outline");
 }
 
+
+AOS.init();

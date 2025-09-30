@@ -5,7 +5,6 @@
     flex-direction: column;
     justify-content: center;
     gap: 4rem;
-    width: 100%;
 }
 
 .sobre-titulo {
@@ -19,7 +18,7 @@
     max-width: 800px;
     margin: 0 auto;
     border-radius: 16px;
-    /* border: 1px solid var(--vidro); */
+
     backdrop-filter: blur(10px);
     background: var(--vidroDois);
 }
@@ -28,7 +27,6 @@
     color: var(--textColor);
     text-align: center;
     font-size: 1.5rem;
-    overflow: hidden;
 }
 
 .logos {
@@ -78,9 +76,12 @@
 
 
 @media screen and (max-width: 799px) {
-
     .sobre-paragrafo {
         font-size: 1rem;
+    }
+
+    .sobre-caixa {
+        margin: 0 1rem;
     }
 
     .logos img {

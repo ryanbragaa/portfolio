@@ -2,15 +2,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1.5rem;
+    padding: 1rem 1.5rem;
     background: var(--vidro);
     backdrop-filter: blur(10px);
     border-radius: calc(infinity * 1px);
     box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
 
-.espaco {
-    padding-top: 24px;
+.header {
+    padding-top: 1rem;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -50,7 +50,7 @@
 }
 
 #switch {
-margin-left: 20px;
+  margin-left: 20px;
   width: 60px;
   height: 30px;
   background: #ccc;
@@ -90,6 +90,16 @@ body.dark #switch button {
   transform: translateX(30px); 
 }
 
-#sobre, #projetos, #contatos {
-    scroll-margin-top: 30px;
+
+
+
+@media screen and (max-width: 799px) {
+    .navegacao {
+        width: 90%;
+    }
+
+    .menu {
+      gap: 1.5rem;
+
+    }
 }

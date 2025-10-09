@@ -101,8 +101,14 @@ label {
 
 
 @media screen and (max-width: 799px) {
+
+    .formulario-contato {
+        width: 90%;
+    }
+
     .social-link {
-        gap: 2px;
-        padding: 5px 10px;
+        font-size: 0.6rem;
+        padding: 8px 14px;
+        transition: all 0.7s ease;
     }
 }

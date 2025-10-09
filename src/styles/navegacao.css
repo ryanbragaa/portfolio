@@ -94,12 +94,27 @@ body.dark #switch button {
 
 
 @media screen and (max-width: 799px) {
-    .navegacao {
-        width: 90%;
-    }
-
     .menu {
       gap: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .header {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .navegacao {
+        font-size: small;
+    }
+
+    .switch {
+      width: 100%;
+    }
+    .menu {
+      gap: 1rem;
 
     }
 }

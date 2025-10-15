@@ -1,6 +1,7 @@
 .projetos {
     padding: 6rem 2rem;
     color: var(--textColor);
+    overflow: hidden;
 }
 
 .projetos-caixa {
